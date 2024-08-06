@@ -7,7 +7,9 @@ body {
     width: 650px;
     background-color: #FFFCFC;
     border-radius: 20px;
-    transform: translateX(50%) translateY(20%);
+    transform: translateX(50%) translateY(-100vh);
+    position: relative;
+    animation: Pop 2s ease forwards;
 }
 .button-exit {
     display: flex;
@@ -45,11 +47,15 @@ width: 50px;
 .flip {
     transform: rotateY(180deg);
     margin-left: 20px;
+    position: relative;
+    animation: moveLeftToRight 1.5s infinite ease-in-out alternate-reverse;
     
 }
 
 .notflip {
     margin-right: 20px;
+    position: relative;
+    animation: moveRightToLeft 1.5s infinite ease-in-out alternate-reverse;
 }
 
 h1 {
@@ -80,4 +86,36 @@ p {
     color: #F48200;
 }
 
+
+@keyframes moveLeftToRight {
+    from{
+        margin-left: 20px;
+    }
+    to{
+        margin-left: 60px;
+    }
+}
+
+@keyframes moveRightToLeft {
+   
+    from{
+        margin-right: 20px;
+    }
+    to {
+        margin-right: 60px;
+    }
+    
+}
+
+@keyframes Pop {
+    0% {
+        transform: translateX(50%) translateY(-100vh);
+    }
+    50% {
+        transform: translateX(50%) translateY(40%);
+    }
+    100%{
+        transform: translateX(50%) translateY(20%);
+    }
+}
 
