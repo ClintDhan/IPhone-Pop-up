@@ -1,0 +1,83 @@
+body {
+    background-color: #F5F5F5;
+}
+
+.pop-container {
+    height: 400px;
+    width: 650px;
+    background-color: #FFFCFC;
+    border-radius: 20px;
+    transform: translateX(50%) translateY(20%);
+}
+.button-exit {
+    display: flex;
+    justify-content: end;
+    margin-right: 20px;
+}
+
+.exit {
+    margin-top: 37px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    background-color: #F31818;
+    color: #FFFCFC;
+}
+.content-section, .content-button {
+    text-align: center;
+}
+.content-section h1,p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.Iphone {
+    width: 214px;
+    height: 151px;
+}
+
+svg {
+height: 50px;
+width: 50px;
+}
+
+.flip {
+    transform: rotateY(180deg);
+    margin-left: 20px;
+    
+}
+
+.notflip {
+    margin-right: 20px;
+}
+
+h1 {
+    font-family: Inter;
+    font-size: 36px;
+    font-weight: 800;
+}
+
+p {
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.content-button {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.content-button button {
+    font-size: 25px;
+    font-family: Inter;
+    font-weight: 800;
+    background-color: #FFFCFC;
+    border: none;
+    cursor: pointer;
+    color: #F48200;
+}
+
+
